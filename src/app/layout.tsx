@@ -5,12 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Ooredoo Algeria",
-    template: "%s | Ooredoo Algeria",
+  title: "FeedbackAI",
+  description: "Intelligent customer feedback management",
+  icons: {
+    icon: "/favicon.png",
   },
-  description:
-    "Ooredoo Algeria frontend — 4G/5G Internet plans, intelligent feedback, and admin dashboard.",
 };
 
 export default function RootLayout({
