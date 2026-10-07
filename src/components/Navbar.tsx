@@ -224,6 +224,14 @@ export default function Navbar() {
               </div>
             </div>
 
+            <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                  <p className="text-sm font-semibold text-slate-900">
+                    Guerrara FatimaZohra
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Footer */}
             <div className="mt-7 border-t border-slate-100 pt-5">
               <p className="text-xs leading-5 text-slate-400">
