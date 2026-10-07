@@ -221,10 +221,8 @@ export default function Navbar() {
                     Soumaya EL MIHNAOUI
                   </p>
                 </div>
-              </div>
-            </div>
 
-            <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
                   <p className="text-sm font-semibold text-slate-900">
                     Guerrara FatimaZohra
                   </p>
