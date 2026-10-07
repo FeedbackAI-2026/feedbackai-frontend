@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ooredoo-mist text-ooredoo-ink antialiased;
+}
+
+::selection {
+  background: rgba(230, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4dc;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9c6;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ooredoo-red px-6 py-2.5 text-sm font-semibold text-white shadow-card transition hover:bg-ooredoo-darkred focus:outline-none focus:ring-2 focus:ring-ooredoo-red focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-2.5 text-sm font-semibold text-ooredoo-ink transition hover:border-ooredoo-red hover:text-ooredoo-red focus:outline-none focus:ring-2 focus:ring-ooredoo-red focus:ring-offset-2;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-ooredoo-ink placeholder-slate-400 transition focus:border-ooredoo-red focus:outline-none focus:ring-2 focus:ring-ooredoo-red/20;
+  }
+  .card {
+    @apply rounded-2xl bg-white p-6 shadow-soft;
+  }
+}
+
+.announcement-track {
+  animation: announcement-scroll 25s linear infinite;
+}
+
+@keyframes announcement-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
