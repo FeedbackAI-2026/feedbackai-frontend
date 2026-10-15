@@ -25,7 +25,7 @@ export default function LoginPage() {
       router.push(isAdminEmail(cred.user.email) ? "/admin" : "/");
       router.refresh();
     } catch (err: any) {
-      setError("Incorrect credentials or account does not exist.");
+      setError("Invalid email or password. Please try again.");
       setStatus("error");
     }
   }
@@ -33,13 +33,13 @@ export default function LoginPage() {
   return (
     <AuthCard
       title="Welcome back"
-      subtitle="Sign in to your Ooredoo customer account."
+      subtitle="Sign in to your FeedbackAI account."
       footer={
         <>
           Don't have an account yet?{" "}
           <Link
             href="/signup"
-            className="font-semibold text-ooredoo-red hover:underline"
+            className="font-semibold text-red-600 hover:underline"
           >
             Create an account
           </Link>
@@ -68,7 +68,7 @@ export default function LoginPage() {
             <label className="text-sm font-semibold">Password</label>
             <Link
               href="/forgot-password"
-              className="text-xs font-semibold text-ooredoo-red hover:underline"
+              className="text-xs font-semibold text-red-600 hover:underline"
             >
               Forgot password?
             </Link>
@@ -87,7 +87,7 @@ export default function LoginPage() {
         </div>
 
         {status === "error" && (
-          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-ooredoo-red">
+          <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-600">
             {error}
           </p>
         )}

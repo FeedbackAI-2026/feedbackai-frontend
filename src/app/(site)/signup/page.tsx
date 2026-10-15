@@ -50,7 +50,7 @@ export default function SignupPage() {
       setError(
         err.code === "auth/email-already-in-use"
           ? "An account already exists with this email address."
-          : "Sign-up failed. Please check your information.",
+          : "Unable to create your account. Please try again.",
       );
       setStatus("error");
     }
@@ -59,7 +59,7 @@ export default function SignupPage() {
   return (
     <AuthCard
       title="Create your account"
-      subtitle="Join Ooredoo and manage your plans online."
+      subtitle="Create your FeedbackAI account and start sharing your feedback."
       footer={
         <>
           Already have an account?{" "}

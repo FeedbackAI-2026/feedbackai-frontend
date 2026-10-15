@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MessageSquareText, Search, Info, X } from "lucide-react";
 import { useState } from "react";
+import { BrainCircuit } from "lucide-react";
 import AuthButtons from "./AuthButtons";
 
 const links = [
@@ -43,9 +44,21 @@ export default function Navbar() {
         <div className="border-b border-slate-100 bg-white/95 backdrop-blur">
           <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-3">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-extrabold lowercase italic tracking-tight text-ooredoo-red">
-                ooredoo<span className="not-italic">•</span>
-              </span>
+              <div className="flex shrink-0 items-center gap-1.5">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-rose-700">
+                  <BrainCircuit className="h-4 w-4 text-white" />
+                </div>
+
+                <div className="flex flex-col leading-tight">
+                  <span className="text-base font-extrabold tracking-tight text-gray-900">
+                    Feedback<span className="text-red-600">AI</span>
+                  </span>
+
+                  <span className="whitespace-nowrap text-[9px] font-semibold uppercase tracking-tight text-gray-500">
+                    Ooredoo Use Case
+                  </span>
+                </div>
+              </div>
             </Link>
 
             <nav className="hidden items-center gap-0.5 lg:flex">
@@ -215,14 +228,23 @@ export default function Navbar() {
                     Oumniahiba
                   </p>
                 </div>
+
+                <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+                  <p className="text-sm font-semibold text-slate-900">
+                    Soumaya EL MIHNAOUI
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Footer */}
             <div className="mt-7 border-t border-slate-100 pt-5">
               <p className="text-xs leading-5 text-slate-400">
-                Developed as part of the ThirdUni AI Program. This project is an
-                educational and collaborative initiative.
+                FeedbackAI is an independent student project developed as part
+                of the ThirdUni AI Program. Ooredoo Algeria is used solely as a
+                demonstration use case. This project is not affiliated with,
+                sponsored by, or endorsed by Ooredoo Algeria. All trademarks and
+                brand names belong to their respective owners.
               </p>
             </div>
           </div>

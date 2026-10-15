@@ -13,64 +13,70 @@ import {
 
 const offers = [
   {
-    name: "Maxi 1000",
+    name: "Demo Plan Pro",
     data: "1000 GB",
-    price: "1500 DA",
-    tag: "Best-seller",
-    perks: ["5G included", "Unlimited calls", "30-day validity"],
+    price: "Demo",
+    tag: "Featured",
+    perks: ["High-speed data", "Flexible options", "Demo validity"],
   },
   {
-    name: "Maxi 500",
+    name: "Demo Plan Plus",
     data: "500 GB",
-    price: "1000 DA",
+    price: "Demo",
     tag: null,
-    perks: ["4G+", "Unlimited calls", "30-day validity"],
+    perks: ["Fast connectivity", "Flexible options", "Demo validity"],
   },
   {
-    name: "Maxi 200",
+    name: "Demo Plan Basic",
     data: "200 GB",
-    price: "500 DA",
+    price: "Demo",
     tag: null,
-    perks: ["4G", "SMS included", "30-day validity"],
+    perks: ["Essential connectivity", "Flexible options", "Demo validity"],
   },
 ];
 
 const services = [
   {
     icon: Rocket,
-    title: "Noudjoum",
-    desc: "The loyalty program that lets you earn rewards.",
+    title: "Customer Loyalty",
+    desc: "A demonstration of customer rewards and engagement programs.",
   },
   {
     icon: Smartphone,
-    title: "My Ooredoo",
-    desc: "Manage your line, track your usage, and recharge with one click.",
+    title: "Customer App",
+    desc: "A sample interface for managing an account and tracking usage.",
   },
   {
     icon: Zap,
-    title: "eStorm",
-    desc: "Fast and secure electronic recharges, 24/7.",
+    title: "Digital Payments",
+    desc: "A demonstration of convenient digital transactions.",
   },
   {
     icon: Wifi,
-    title: "5G+",
-    desc: "The next-generation network, built for 5G.",
+    title: "Connectivity",
+    desc: "An example of connectivity services in a telecom use case.",
   },
   {
     icon: ShieldCheck,
-    title: "Security",
-    desc: "Protection of your data and remote SIM blocking.",
+    title: "Data Security",
+    desc: "Explore concepts related to customer privacy and account security.",
   },
   {
     icon: BadgeCheck,
     title: "AI Assistance",
-    desc: "Your feedback is analyzed and a response is automatically sent to you.",
+    desc: "Customer feedback is analyzed to generate relevant AI-powered responses.",
   },
 ];
 
 export default function HomePage() {
   return (
     <div id="particuliers">
+      <div className="bg-slate-900 px-4 py-2 text-center text-xs leading-5 text-white">
+        FeedbackAI is an independent student project developed as part of the
+        ThirdUni AI Program. Ooredoo Algeria is used solely as a demonstration
+        use case. Not affiliated with, sponsored by, or endorsed by Ooredoo
+        Algeria.
+      </div>
       {/* ================= HERO — billboard style ================= */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-200 via-rose-100 to-amber-100">
         <div
@@ -87,7 +93,7 @@ export default function HomePage() {
             <div className="absolute -inset-3 rotate-[-1.5deg] rounded-3xl bg-white/60 blur-sm" />
             <div className="relative rotate-[-1.5deg] rounded-2xl border-8 border-ooredoo-ink bg-gradient-to-br from-ooredoo-red to-ooredoo-darkred p-8 text-white shadow-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-white/80">
-                Ooredoo Internet
+                Demo Internet
               </p>
               <p className="mt-1 text-3xl font-extrabold uppercase leading-tight sm:text-4xl">
                 Up to
@@ -123,8 +129,8 @@ export default function HomePage() {
               <span className="text-ooredoo-red">MAX</span> INTERNET
             </span>
             <p className="mx-auto mt-6 max-w-md text-lg text-slate-600 lg:mx-0">
-              Stream, play, share. With up to 1000 GB and 5G, experience
-              unlimited mobile Internet, everywhere in Algeria.
+              Turn customer feedback into meaningful insights with AI-generated,
+              personalized responses. Demonstrated through a telecom use case.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
               <Link href="/signup" className="btn-primary !px-8 !py-3">
@@ -142,7 +148,7 @@ export default function HomePage() {
       <section id="offers" className="mx-auto max-w-7xl px-4 py-20">
         <div className="mb-12 text-center">
           <span className="text-xs font-bold uppercase tracking-[0.3em] text-ooredoo-red">
-            Our offers
+            Demo Scenarios
           </span>
           <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
             A plan for every need
@@ -191,7 +197,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="mb-12 text-center">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-ooredoo-red">
-              All about Ooredoo
+              Explore the Use Case
             </span>
             <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
               Services designed for you

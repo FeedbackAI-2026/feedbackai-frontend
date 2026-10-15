@@ -1,48 +1,64 @@
 import Link from "next/link";
+import { BrainCircuit } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-ooredoo-ink text-slate-300">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <span className="text-2xl font-extrabold lowercase italic tracking-tight text-white">
-            ooredoo<span className="not-italic text-ooredoo-red">•</span>
-          </span>
+          <div className="flex items-center gap-2">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-rose-700">
+              <BrainCircuit className="h-4 w-4 text-white" />
+            </div>
+
+            <div className="flex flex-col leading-tight">
+              <span className="text-base font-extrabold tracking-tight text-white">
+                Feedback<span className="text-red-500">AI</span>
+              </span>
+              <span className="mt-0.5 whitespace-nowrap text-[9px] font-semibold uppercase tracking-tight text-slate-400">
+                Ooredoo Use Case
+              </span>
+            </div>
+          </div>
+
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
-            Born for 5G. The network that connects Algerians to what matters:
-            mobile Internet, plans, and digital services.
+            AI-powered customer feedback intelligence. An independent student
+            project developed as part of the ThirdUni AI Program, using Ooredoo
+            Algeria as a demonstration use case.
           </p>
         </div>
+
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            Offers
+            Explore
           </h4>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/#offres" className="hover:text-white">
-                Internet plans
+                Demo Plans
               </Link>
             </li>
             <li>
               <Link href="/#offres" className="hover:text-white">
-                5G offers
+                Demo Offers
               </Link>
             </li>
             <li>
               <Link href="/#services" className="hover:text-white">
-                eStorm
+                AI Features
               </Link>
             </li>
             <li>
               <Link href="/#services" className="hover:text-white">
-                Noudjoum
+                Customer Insights
               </Link>
             </li>
           </ul>
         </div>
+
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            Help
+            Support
           </h4>
           <ul className="space-y-2 text-sm">
             <li>
@@ -52,30 +68,34 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/login" className="hover:text-white">
-                Customer account
+                Sign In
               </Link>
             </li>
             <li>
               <Link href="/forgot-password" className="hover:text-white">
-                Forgot password
+                Reset Password
               </Link>
             </li>
           </ul>
         </div>
+
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            Contact
+            About This Project
           </h4>
           <ul className="space-y-2 text-sm text-slate-400">
-            <li>Call Center: 12 12</li>
-            <li>support@ooredoo-clone.dz</li>
-            <li>Algiers, Algeria</li>
+            <li>ThirdUni AI Program</li>
+            <li>Ooredoo Algeria — Use Case</li>
+            <li>Independent student project</li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Demo clone inspired by Ooredoo Algeria —
-        Educational project, no affiliation.
+
+      <div className="border-t border-white/10 px-4 py-5 text-center text-xs leading-relaxed text-slate-500">
+        © {new Date().getFullYear()} FeedbackAI. Educational project developed
+        as part of the ThirdUni AI Program. Not affiliated with, sponsored by,
+        or endorsed by Ooredoo Algeria. All trademarks belong to their
+        respective owners.
       </div>
     </footer>
   );
