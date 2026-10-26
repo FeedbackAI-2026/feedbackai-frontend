@@ -61,7 +61,7 @@ interface AnalyzeResponse {
   };
 }
 
-const API_BASE_URL = "https://feedbackai-b5l9.onrender.com";
+const API_BASE_URL = "https://feedbackai-6htm.onrender.com";
 
 function mapApiFeedback(item: ApiFeedback): Feedback {
   return {
